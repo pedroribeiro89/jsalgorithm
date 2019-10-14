@@ -25,10 +25,12 @@ Dicas:
 Foi feito uma pagina para aprender a programar em javascript. 
 A API do HTML5 escolhida foi de Performance and Integration, com o uso de WEB Workers
 
-OBS: o navegador chrome não aceita rodar um web worker de um arquivo(file:///), a forma mais fácil 
+OBS1: o navegador chrome não aceita rodar um web worker de um arquivo(file:///), a forma mais fácil 
 de testar neste navegador foi executando um servidor local:
 - instalar: npm install -g local-web-server
 - executar servidor (na pasta do projeto): ws 
 - entrar http://localhost:8000/index.html
+
+OBS2: O código com a resposta ja é carregado no inicio para acelerar os testes da aplicação
 
 ## Atividade 2
