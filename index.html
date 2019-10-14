@@ -27,24 +27,24 @@
     <h1 class="app-title">JSAlgorithm</h1>
     <!-- <nav>Menu de navegação principal</nav> -->
   </header>
-  <main>
+  <main id="main-content">
     <section class="main-feature">
       <h2>Digite seu código</h2>
-      <textarea>function isGreaterThan(a, b) {}</textarea>
+      <textarea id="codeInputField"></textarea>
 
       <h2>Digite seu teste</h2>
-      <textarea>1 2</textarea>
+      <textarea id="testInputField"></textarea>
 
-      <button>Resetar Teste</button>
-      <button>Testar</button>
-      <p>Resultado: true</p>
+      <button id="resetTestBtn">Resetar Teste</button>
+      <button id="testBtn">Testar</button>
+      <p id="testResult"></p>
     </section>
     <aside class="secundary-feature">
-      <h2>Maior ou Menor?</h2>
-      <p>Desenvolva a função isGreaterThan(a, b), que verifica se o valor a é maior que b</p>
-      <p>O teste e feito digitando dois valores separados por um espaco. o primeiro e o valor de "a" e o segundo de "b"</p>
-      <button>Enviar</button>
-      <p>OK</p>
+      <h2 id="problemTitle"></h2>
+      <p id="problemDesc"></p>
+      <p id="problemTestDesc"></p>
+      <button id="submitBtn">Enviar</button>
+      <p id="submitionResult"></p>
     </aside>
   </main>
   <footer>Atividade da disciplina: Frontend avancado. Aluno: Pedro Ribeiro Bastos Soares</footer>

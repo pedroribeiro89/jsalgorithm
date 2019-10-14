@@ -22,6 +22,13 @@ Dicas:
 
 - Pode ser utilizado o html5 boilerplate (Links para um site externo.) para iniciar a construção da sua estrutura de marcação. Ou melhor, use o exercício prático 0 feito em sala de aula como base.
 
-Foi feito uma pagina para aprender a programar em javascript
+Foi feito uma pagina para aprender a programar em javascript. 
+A API do HTML5 escolhida foi de Performance and Integration, com o uso de WEB Workers
+
+OBS: o navegador chrome não aceita rodar um web worker de um arquivo(file:///), a forma mais fácil 
+de testar neste navegador foi executando um servidor local:
+- instalar: npm install -g local-web-server
+- executar servidor (na pasta do projeto): ws 
+- entrar http://localhost:8000/index.html
 
 ## Atividade 2
