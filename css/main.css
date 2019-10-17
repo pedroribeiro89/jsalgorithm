@@ -1,40 +1,147 @@
-/*body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #222;
+/* CONSTANTS */
+/* MIXINS */
+/* MAIN SELECTORS */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
 }
 
-body>header {
-  background-color: #627A14;
-  padding: 1vh 1vw;
-  height: 10vh;
+@media screen and (min-width: 770px) {
+  main {
+    display: flex;
+  }
+}
+
+.appheader {
+  background-color: black;
+  height: 70px;
   box-sizing: border-box;
-  color: #fff;
+  color: white;
+  padding: 1vh 5vw;
 }
-
-body>main {
-  height: 85vh;
-}
-
-body>footer {
-  height: 5vh;
-  background-color: #B3CB65;
-}
-
-h1.app-title {
+.appheader__title {
   font-size: 20px;
 }
-
-section.main-feature {
-  float: left;
-  background-color: #fbfbfb;
-  width: 80vw;
-  height: 85vh;
+@media screen and (min-width: 770px) {
+  .appheader {
+    height: 60px;
+  }
 }
 
-aside.secundary-feature {
-  float: right;
-  background-color: #6F4D8F;
-  width: 20vw;
-  height: 85vh;
-  color: #fff;
-}*/
+.problem {
+  text-align: center;
+  background-color: #e6e6e6;
+  padding: 1px;
+}
+@media screen and (min-width: 770px) {
+  .problem {
+    width: 45%;
+  }
+}
+.problem__title {
+  font-size: 30px;
+}
+.problem__desc {
+  font-size: 20px;
+  padding: 15px;
+  margin-bottom: 0;
+}
+.problem__testdesc {
+  font-size: 15px;
+  padding: 0 15px;
+  margin-top: 0;
+}
+.problem__submitbtn {
+  color: black;
+  background-color: white;
+  line-height: 30px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+}
+@media screen and (min-width: 770px) {
+  .problem__submitbtn:hover {
+    color: white;
+    background-color: black;
+  }
+}
+.problem__result {
+  font-size: 15px;
+  padding: 0 15px;
+}
+
+.workplace {
+  text-align: center;
+}
+@media screen and (min-width: 770px) {
+  .workplace {
+    width: 55%;
+  }
+}
+.workplace__title {
+  font-size: 30px;
+}
+.workplace__codearea {
+  width: 90%;
+  min-height: 200px;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+.workplace__testarea {
+  width: 90%;
+  min-height: 50px;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+.workplace__resetbtn {
+  color: black;
+  background-color: white;
+  line-height: 30px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+}
+@media screen and (min-width: 770px) {
+  .workplace__resetbtn:hover {
+    color: white;
+    background-color: black;
+  }
+}
+.workplace__testbtn {
+  color: black;
+  background-color: white;
+  line-height: 30px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+}
+@media screen and (min-width: 770px) {
+  .workplace__testbtn:hover {
+    color: white;
+    background-color: black;
+  }
+}
+.workplace__result {
+  font-size: 15px;
+  padding: 0 15px;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 4vh 0vw;
+  text-align: center;
+  height: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

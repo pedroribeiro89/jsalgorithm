@@ -23,31 +23,31 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <header>
-    <h1 class="app-title">JSAlgorithm</h1>
+  <header class="appheader">
+    <h1 class="appheader__title">JSAlgorithm</h1>
     <!-- <nav>Menu de navegação principal</nav> -->
   </header>
   <main id="main-content">
-    <section class="main-feature">
-      <h2>Digite seu código</h2>
-      <textarea id="codeInputField"></textarea>
-
-      <h2>Digite seu teste</h2>
-      <textarea id="testInputField"></textarea>
-
-      <button id="resetTestBtn">Resetar Teste</button>
-      <button id="testBtn">Testar</button>
-      <p id="testResult"></p>
+    <section class="problem">
+      <h2 id="problemTitle" class="problem__title"></h2>
+      <p id="problemDesc" class="problem__desc"></p>
+      <p id="problemTestDesc" class="problem__testdesc"></p>
+      <button id="submitBtn" class="problem__submitbtn">Enviar</button>
+      <p id="submitionResult" class="problem__result"></p>
     </section>
-    <aside class="secundary-feature">
-      <h2 id="problemTitle"></h2>
-      <p id="problemDesc"></p>
-      <p id="problemTestDesc"></p>
-      <button id="submitBtn">Enviar</button>
-      <p id="submitionResult"></p>
+    <aside class="workplace">
+      <h2 class="workplace__title">Digite seu código</h2>
+      <textarea id="codeInputField" class="workplace__codearea"></textarea>
+
+      <h2 class="workplace__title">Digite seu teste</h2>
+      <textarea id="testInputField" class="workplace__testarea"></textarea>
+
+      <button id="resetTestBtn" class="workplace__resetbtn">Resetar Teste</button>
+      <button id="testBtn" class="workplace__testbtn">Testar</button>
+      <p id="testResult" class="workplace__result"></p>
     </aside>
   </main>
-  <footer>Atividade da disciplina: Frontend avancado. Aluno: Pedro Ribeiro Bastos Soares</footer>
+  <footer>Feito por: Pedro Ribeiro Bastos Soares</footer>
   
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
