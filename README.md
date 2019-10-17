@@ -54,7 +54,7 @@ Os recursos usados do SASS foram:
 
 - variáveis para definir as cores primárias e secundárias do estilo.
 - mixins para definir classes reusaveis de elementos como o textArea e button.
-- media para responsividade (feita com mobile-first)
-- diversos aninhamentos, como de propriedades(font, border) e com seletor de classe pai(&), que ajudou muito na implementação da metodologia BEM*
+- media para responsividade (feita com mobile-first).
+- diversos aninhamentos, como de propriedades(font, border) e com seletor de classe pai(&), que ajudou muito na implementação da metodologia BEM.*
 
 *OBS: o seletor pai não existia em versões mais antigas do sass, e no mac ja vinha com a versão antiga, foi preciso instalar uma versão recente e configurar o PATH para os arquivos fossem executados sem erros.
