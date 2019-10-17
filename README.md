@@ -50,10 +50,11 @@ Dicas:
 - Não se preocupe, pois o design gráfico não será avaliado! :) Isso não é uma aula de UX ou de desenho.
 
 Foi feito o estilo da pagina com SASS, usando SCSS como sintaxe e BEM como metodologia
-Os recursos usados do SASS foram: 
-	- variáveis para definir as cores primárias e secundárias do estilo
-	- mixins para definir classes reusaveis de elementos como o textArea e button
-	- media para responsividade(feito com mobile-first)
-	- diversos aninhamentos, como de propriedades(font, border) e com seletor de classe pai(&), que ajudou muito na implementação da metodologia BEM*
+Os recursos usados do SASS foram:
+
+- variáveis para definir as cores primárias e secundárias do estilo
+- mixins para definir classes reusaveis de elementos como o textArea e button
+- media para responsividade(feito com mobile-first)
+- diversos aninhamentos, como de propriedades(font, border) e com seletor de classe pai(&), que ajudou muito na implementação da metodologia BEM*
 
 *OBS: o seletor pai não existia em versões mais antigas do sass, e no mac ja vinha com a versão antiga, foi preciso instalar uma versão recente e configurar o PATH para os arquivos fossem executados sem erros
