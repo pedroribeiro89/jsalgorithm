@@ -123,6 +123,17 @@ main {
   }
 }
 
+.loading-message {
+  padding: 40px;
+  font-weight: bold;
+}
+
+.error-message {
+  padding: 40px;
+  color: red;
+  font-weight: bold;
+}
+
 footer {
   color: $secondary-color;
   background-color: $primary-color;

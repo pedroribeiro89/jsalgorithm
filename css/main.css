@@ -136,6 +136,17 @@ body {
   padding: 0 15px;
 }
 
+.loading-message {
+  padding: 40px;
+  font-weight: bold;
+}
+
+.error-message {
+  padding: 40px;
+  color: red;
+  font-weight: bold;
+}
+
 footer {
   color: white;
   background-color: black;
