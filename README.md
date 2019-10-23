@@ -59,7 +59,7 @@ Os recursos usados do SASS foram:
 
 *OBS: o seletor pai não existia em versões mais antigas do sass, e no mac ja vinha com a versão antiga, foi preciso instalar uma versão recente e configurar o PATH para os arquivos fossem executados sem erros.
 
-## Atividade 2 - Pré-processadores e metodologias CSS
+## Atividade 3 - Novos recursos do JavaScript
 
 - Dada a prova de conceito feita no Exercício Prático 01 (HTML5 APIs) e evoluída no Exercício Prático 02 (Metodologias e pré-processadores CSS), você deve agora refatorar seu código para utilizar recursos mais recentes do JavaScript. Para isso, é necessário evidenciar a implementação de ao menos 4 novos recursos da linguagem ECMAscript 6 (ou superior) explicados em sala de aula;
 - O trabalho pode seguir sendo feito em dupla;
