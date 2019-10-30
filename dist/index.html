@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>JSAlgorithm</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+ -->
+  <meta name="theme-color" content="#fafafa">
+<link href="styles.css" rel="stylesheet"></head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <header class="appheader">
+    <h1 class="appheader__title">JSAlgorithm</h1>
+    <!-- <nav>Menu de navegação principal</nav> -->
+  </header>
+  <p id="loading-message" class="loading-message">Aguarde enquando o problema é carregado...</p>
+  <main id="main-content" hidden>
+    <section class="problem">
+      <h2 id="problemTitle" class="problem__title"></h2>
+      <p id="problemDesc" class="problem__desc"></p>
+      <p id="problemTestDesc" class="problem__testdesc"></p>
+      <button id="submitBtn" class="problem__submitbtn">Enviar</button>
+      <p id="submitionResult" class="problem__result"></p>
+    </section>
+    <aside class="workplace">
+      <h2 class="workplace__title">Digite seu código</h2>
+      <textarea id="codeInputField" class="workplace__codearea"></textarea>
+
+      <h2 class="workplace__title">Digite seu teste</h2>
+      <textarea id="testInputField" class="workplace__testarea"></textarea>
+
+      <button id="resetTestBtn" class="workplace__resetbtn">Resetar Teste</button>
+      <button id="testBtn" class="workplace__testbtn">Testar</button>
+      <p id="testResult" class="workplace__result"></p>
+    </aside>
+  </main>
+  <footer>Feito por: Pedro Ribeiro Bastos Soares</footer>
+  
+  <!-- <script src="js/vendor/modernizr-3.7.1.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <!-- <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script> -->
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
