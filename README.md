@@ -115,3 +115,12 @@ Dicas finais:
 	- Na raíz do seu projeto deve possuir quatro pastas: src/, dist/, doc/ e node_modules/ (essa última não deve estar versionada no git);
 	- Além das três pastas, deve existir cinco arquivos também na raíz do seu projeto: package.json, package-lock.json, .gitignore, webpack.config.js e readme.md. Você já conhece a finalidade de cada um deles.
 	- Os demais arquivos do html5-boilerplate podem ser movidos para dentro de src/ temporariamente.
+
+Foram usados os pacotes:
+- Babel: babel-loader babel/preset-env babel/core
+- Css: css-loader mini-css-extract-plugin 
+- html: html-webpack-plugin
+- arquivos: file-loader
+- sass: node-sass sass sass-loader style-loader fibers
+- web workers: worker-loader
+- servidor: webpack-dev-server
