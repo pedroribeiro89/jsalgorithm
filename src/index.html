@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -24,27 +24,54 @@
     <h1 class="appheader__title">JSAlgorithm</h1>
     <!-- <nav>Menu de navegação principal</nav> -->
   </header>
-  <p id="loading-message" class="loading-message">Aguarde enquando o problema é carregado...</p>
-  <main id="main-content" hidden>
+  <main id="main-problem-select" aria-live="polite">
+    <section class="problemtable">
+      <h2 id="problemTitle" class="problemtable__title">Lista de problemas</h2>
+      <table class="problemtable__table">
+        <tr>
+          <th>id</th>
+          <th>Nome</th>
+          <th>Tipo</th>
+          <th>Dificuldade</th>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td id="problem0" class="problemtable__td--clickable"><a>Maior ou Menor?</a></td>
+          <td>Lógica</td>
+          <td class="problemtable__td--easy">Fácil</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td id="problem1" class="problemtable__td--clickable"><a>Números em ordem</a></td>
+          <td>Ordenação</td>
+          <td class="problemtable__td--medium">Médio</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <p id="loading-message" class="loading-message" aria-live="polite" hidden>Aguarde enquando o problema é carregado...</p>
+  <main id="main-content" aria-live="polite" hidden>
     <section class="problem">
       <h2 id="problemTitle" class="problem__title"></h2>
       <p id="problemDesc" class="problem__desc"></p>
       <p id="problemTestDesc" class="problem__testdesc"></p>
-      <button id="submitBtn" class="problem__submitbtn">Enviar</button>
-      <p id="submitionResult" class="problem__result"></p>
+      <button id="goBackBtn" class="problem__goBackbtn" aria-controls="main-content">Voltar</button>
+      <button id="submitBtn" class="problem__submitbtn" aria-controls="submitionResult">Enviar Resposta</button>
+      <p id="submitionResult" class="problem__result" aria-live="polite"></p>
     </section>
     <aside class="workplace">
-      <h2 class="workplace__title">Digite seu código</h2>
-      <textarea id="codeInputField" class="workplace__codearea"></textarea>
+      <h2 id="codeInputTitle" class="workplace__title">Digite seu código</h2>
+      <textarea id="codeInputField" class="workplace__codearea" aria-labelledby="codeInputTitle"></textarea>
 
-      <h2 class="workplace__title">Digite seu teste</h2>
-      <textarea id="testInputField" class="workplace__testarea"></textarea>
+      <h2 id="testInputTitle" class="workplace__title">Digite seu teste</h2>
+      <textarea id="testInputField" class="workplace__testarea" aria-labelledby="testInputTitle"></textarea>
 
       <button id="resetTestBtn" class="workplace__resetbtn">Resetar Teste</button>
-      <button id="testBtn" class="workplace__testbtn">Testar</button>
-      <p id="testResult" class="workplace__result"></p>
+      <button id="testBtn" class="workplace__testbtn" aria-controls="testResult">Testar</button>
+      <p id="testResult" class="workplace__result" aria-live="polite"></p>
     </aside>
   </main>
+
   <footer>Feito por: Pedro Ribeiro Bastos Soares</footer>
   
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

@@ -20,6 +20,7 @@ function runSubmit(e) {
 	const problem = e.data['problem'];
 	const testCaseList = problem.testCases;
 	const parseTest = new Function('testCase', problem.parseTestCase);
+	const compareResult = new Function('a', 'b', problem.compareResult);
 		
 	let testCase;
 	let code;
@@ -36,7 +37,8 @@ function runSubmit(e) {
 		}
 
 		if (i < testCaseList.length) {
-			if (result !== testCaseList[i]['result']) {
+			if (!compareResult(result, testCaseList[i]['result'])) {
+			// if (result !== testCaseList[i]['result']) {
 				postMessage({type: 'submit', result:'Erro no teste: ' + testCaseList[i]['test']});
 				i = testCaseList.length;
 			} else { ++passedTests; }

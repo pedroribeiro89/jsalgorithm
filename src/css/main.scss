@@ -89,6 +89,9 @@ main {
   &__submitbtn {
     @include btn($primary-color, $secondary-color);
   }
+  &__goBackbtn {
+    @include btn($primary-color, $secondary-color);
+  }
   &__result {
     font-size: 15px;
     padding: 0 15px;
@@ -120,6 +123,42 @@ main {
   &__result {
     font-size: 15px;
     padding: 0 15px;
+  }
+}
+
+.problemtable {
+  text-align: center;
+  padding: 10px;
+
+  @media screen and (min-width: $max-mobile-width) {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 30px;
+  }
+  &__table {
+    margin: auto;
+    td, th {
+      text-align: left;
+      padding: 8px;
+    }
+  }
+  &__td--easy {
+    color: green;
+  }
+  &__td--medium {
+    color: black;
+  }
+  &__td--hard {
+    color: red;
+  }
+  &__td--clickable {
+    color: blue;
+    cursor: pointer;
+  }
+  &__td--clickable:hover {
+    text-decoration: underline;
   }
 }
 

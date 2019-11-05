@@ -23,7 +23,6 @@ function receiveWorkerMsg(event) {
 
 function configureWorker() {
 	if (window.Worker) {
-		// myWorker = new Worker("./js/worker.js");
 		myWorker = new Worker();
 		myWorker.onmessage = receiveWorkerMsg;
 		return true;
@@ -53,8 +52,23 @@ function submitCode() {
 
 // CONFIGURE
 function toggleLoadingMessage(showMsg) {
-	document.getElementById('main-content').hidden = showMsg;
+	document.getElementById('main-content').hidden = showMsg  || problemObj === null;
+	document.getElementById('main-problem-select').hidden = showMsg || problemObj !== null;
 	document.getElementById('loading-message').hidden = !showMsg;
+}
+
+function goBack() {
+	problemObj = null;
+	toggleLoadingMessage(false);
+}
+ 
+function configureTable() {
+	document.getElementById('problem0').onclick = () => {
+		loadProblem(0);
+	};
+	document.getElementById('problem1').onclick = () => {
+		loadProblem(1);
+	};
 }
 
 function setStartCode() {
@@ -73,6 +87,7 @@ function setProblemTestDesc() {
 	document.getElementById('problemTestDesc').innerHTML = problemObj.testDescription;
 }
 function configureBtns() {
+	document.getElementById('goBackBtn').onclick = goBack;
 	document.getElementById('resetTestBtn').onclick = setDefaultTest;
 	document.getElementById('testBtn').onclick = testCode;
 	document.getElementById('submitBtn').onclick = submitCode;
@@ -100,7 +115,8 @@ function createProblemObj(problemJson) {
 		problemJson['defaultTestCase'],
 		problemJson['testDescription'],
 		problemJson['testCases'],
-		problemJson['parseTestCase']
+		problemJson['parseTestCase'],
+		problemJson['compareResult']
 	);
 }
 
@@ -108,7 +124,7 @@ function simulateProblemRequest(testProblemsId = -1) {
 	// simulate a http GET request to server. if testProblemsId < 0, simulates an error
 	return new Promise((resolve, reject) => {
 		setTimeout( function() {
-		  if (testProblemsId < 0) {
+		  if (testProblemsId < 0 || testProblemsId > testProblems.length - 1) {
 		  	reject(ERROR_LOAD_PROBLEM);
 		  } else {
 		  	resolve(testProblems[testProblemsId]);
@@ -117,9 +133,9 @@ function simulateProblemRequest(testProblemsId = -1) {
 	});
 }
 
-function loadProblem() {
+function loadProblem(testProblemsId) {
 	toggleLoadingMessage(true);
-	simulateProblemRequest(0).then(
+	simulateProblemRequest(testProblemsId).then(
 		(problemJson) => {
 			createProblemObj(problemJson);
 			configureComponents();
@@ -132,7 +148,8 @@ function loadProblem() {
 window.onload = function(e) {
 	let browserSupport = configureWorker();
 	if (browserSupport) {
-		loadProblem();
+		// loadProblem();
+		configureTable();
 	} else {
 		showErrorMessage(ERROR_BROWSER_WEBWORKERS_SUPORT);
 	}
