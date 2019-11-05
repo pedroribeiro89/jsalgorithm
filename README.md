@@ -124,3 +124,24 @@ Foram usados os pacotes:
 - sass: node-sass sass sass-loader style-loader fibers
 - web workers: worker-loader
 - servidor: webpack-dev-server
+
+## Atividade 7 - Usando princípios do WCAG e WAI-ARIA
+
+Sua aplicação já está mais profissional do que quando você começou no primeiro exercício prático, mas para prover uma experiência completa e inclusiva é necessário pensar em requisitos de acessibilidade.
+
+Requisitos:
+
+Tendo como base a aplicação desenvolvida e evoluída nos exercícios práticos 1, 2, 3 e 6:
+
+- Você deve fazer com que sua aplicação seja acessível cumprindo o nível de conformidade "A" do WCAG (Não precisa contemplar todas as diretrizes do nível A, mas pelo menos uma duas talvez seja bacana);
+- [Opcional] Além disso, como forma de ponto extra (bom para quem perdeu pontos na entrega de exercícios atrasados), sua aplicação deve implementar ao menos um role do WAI-ARIA que se mostrar mais adequado (sugestões: widget roles, landmark roles ou live region roles).
+
+Instruções gerais:
+
+- O trabalho pode seguir sendo feito em dupla;
+- O código-fonte deve ser entregue obrigatoriamente via URL do GitHub de um dos integrantes da dupla e com a tag adequada (entregar link da tag da versão criada. Ex: v0.5.0);
+- A cada dia de atraso, desconta-se 1 ponto da nota final, ou seja, após cinco dias de atraso o trabalho é zerado.
+
+Dicas finais:
+
+- Embora você tenha que cumprir os critérios de sucesso do nível de conformidade "A", não foque em cumprir as regras. Foque na pergunta: "Se eu fosse uma pessoa com deficiência (PCD) - que pode ser cega ou surda ou com dificuldade motora, dentre outras - eu conseguiria usar e entender minha aplicação e a funcionalidade que estou propondo?" e mais: "eu conseguiria operar essa simples aplicação/PoC?"
